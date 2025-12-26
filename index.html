@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Anvil Security — reliable guarding, mobile patrols, event security, and keyholding." />
+
+  <title>Anvil Security</title>
+
+  <!-- Favicons (kept in /images as requested) -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-scrolled="false">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Anvil Security home">
+        <img class="brand-mark" src="images/anvil-security-logo.png" alt="Anvil Security logo" />
+        <span class="brand-text">
+          <span class="brand-name">Anvil</span>
+          <span class="brand-sub">Security</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#why">Why us</a>
+        <a href="#contact" class="btn btn-small">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Professional security services</p>
+          <h1>Strong presence. Calm control.</h1>
+          <p class="lead">
+            Anvil Security provides dependable guarding, patrols, and event support — focused on safety, professionalism, and clear communication.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Request a callback</a>
+            <a class="btn btn-ghost" href="#services">View services</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust-item">
+              <div class="trust-value">24/7</div>
+              <div class="trust-label">Coverage</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-value">Fast</div>
+              <div class="trust-label">Deployment</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-value">SIA</div>
+              <div class="trust-label">Licensed staff</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card">
+            <h2 class="card-title">Quick quote</h2>
+            <p class="card-subtitle">Tell us what you need — we’ll get back quickly.</p>
+
+            <form id="quoteForm" class="form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" required placeholder="Your name" />
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" inputmode="tel" autocomplete="tel" required placeholder="e.g. 07..." />
+              </div>
+
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Static guarding</option>
+                  <option>Mobile patrols</option>
+                  <option>Event security</option>
+                  <option>Keyholding & alarm response</option>
+                  <option>Concierge & front of house</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Notes</label>
+                <textarea id="message" name="message" rows="3" placeholder="Location, dates/times, headcount, anything important..."></textarea>
+              </div>
+
+              <button class="btn btn-block" type="submit">Send request</button>
+              <p class="fineprint">
+                This form opens your email app (no data is stored on this page).
+              </p>
+              <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Simple, reliable options — tailored to your site and risks.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card feature">
+            <h3>Static guarding</h3>
+            <p>Visible deterrence, access control, and incident management for sites and premises.</p>
+            <ul class="ticks">
+              <li>Front gate & reception</li>
+              <li>Patrols & checks</li>
+              <li>Incident reporting</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <h3>Mobile patrols</h3>
+            <p>Cost-effective patrols with checklists and time-stamped visits.</p>
+            <ul class="ticks">
+              <li>Scheduled or random</li>
+              <li>Lock/unlock support</li>
+              <li>Welfare checks</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <h3>Event security</h3>
+            <p>Professional stewarding and security presence that keeps your event safe and smooth.</p>
+            <ul class="ticks">
+              <li>Entry management</li>
+              <li>Crowd control</li>
+              <li>Conflict de-escalation</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <h3>Keyholding & alarm response</h3>
+            <p>Out-of-hours response to activations with clear escalation and reporting.</p>
+            <ul class="ticks">
+              <li>Callout response</li>
+              <li>Site checks</li>
+              <li>Secure handover</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <h3>Concierge & front of house</h3>
+            <p>Security-led customer service for residential and commercial spaces.</p>
+            <ul class="ticks">
+              <li>Visitor management</li>
+              <li>Deliveries & logs</li>
+              <li>Professional presence</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <h3>Risk support</h3>
+            <p>Practical guidance on staffing levels, patrol routes, and simple procedures.</p>
+            <ul class="ticks">
+              <li>Site walkthroughs</li>
+              <li>Role briefs</li>
+              <li>Post-incident reviews</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTORS -->
+    <section id="sectors" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Sectors</h2>
+          <p>We support a range of environments — with the right tone for each one.</p>
+        </div>
+
+        <div class="grid cards-4">
+          <div class="pill-card">Construction sites</div>
+          <div class="pill-card">Retail & warehouses</div>
+          <div class="pill-card">Residential blocks</div>
+          <div class="pill-card">Corporate offices</div>
+          <div class="pill-card">Events & venues</div>
+          <div class="pill-card">Education</div>
+          <div class="pill-card">Healthcare</div>
+          <div class="pill-card">Transport & logistics</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why" class="section">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Why Anvil Security</h2>
+            <p class="lead">
+              We keep things simple: clear expectations, professional conduct, and reporting you can rely on.
+            </p>
+
+            <div class="checks">
+              <div class="check">
+                <h3>Professional standards</h3>
+                <p>Uniformed, punctual staff with strong communication and calm control.</p>
+              </div>
+              <div class="check">
+                <h3>Clear reporting</h3>
+                <p>Incident notes and handovers that help you stay informed and compliant.</p>
+              </div>
+              <div class="check">
+                <h3>Practical deployment</h3>
+                <p>We focus on what works on-site: presence, patrol routes, and strong procedures.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card highlight">
+            <h3>Need cover quickly?</h3>
+            <p>Send the basics and we’ll respond with availability and next steps.</p>
+
+            <div class="mini-list">
+              <div><span>1</span> Location</div>
+              <div><span>2</span> Date/time</div>
+              <div><span>3</span> Headcount</div>
+              <div><span>4</span> Any risks</div>
+            </div>
+
+            <a class="btn btn-block" href="#contact">Contact us</a>
+            <p class="fineprint">Email or phone — whatever’s easiest.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Replace the placeholders with your real details when ready.</p>
+        </div>
+
+        <div class="grid contact-grid">
+          <div class="card">
+            <h3>Contact details</h3>
+
+            <div class="contact-item">
+              <div class="contact-label">Email</div>
+              <a id="contactEmail" href="mailto:bookings@anvilsecurity.co.uk">bookings@anvilsecurity.co.uk</a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Phone</div>
+              <a href="tel:+447000000000">+44 7000 000000</a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Coverage</div>
+              <div>UK-wide (travel & local teams)</div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Hours</div>
+              <div>24/7 operations</div>
+            </div>
+
+            <p class="fineprint">Tip: You can connect this form to a backend later (or keep it email-only).</p>
+          </div>
+
+          <div class="card">
+            <h3>Send a message</h3>
+
+            <form id="contactForm" class="form" novalidate>
+              <div class="field">
+                <label for="cname">Name</label>
+                <input id="cname" name="name" autocomplete="name" required placeholder="Your name" />
+              </div>
+
+              <div class="field">
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+
+              <div class="field">
+                <label for="cmsg">Message</label>
+                <textarea id="cmsg" name="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+              </div>
+
+              <button class="btn btn-block" type="submit">Send message</button>
+              <p class="fineprint">Opens your email app (no data is stored on this page).</p>
+              <p id="contactStatus" class="status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <img class="footer-mark" src="images/anvil-security-logo.png" alt="" />
+          <div>
+            <div class="footer-brand">Anvil Security</div>
+            <div class="footer-small">Professional security services</div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a href="#top">Back to top</a>
+          <span class="footer-small">© <span id="year"></span> Anvil Security</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
